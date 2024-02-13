@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Box, SxProps } from '@mui/material';
+import './App.css'
+import { Container } from '@mui/system';
+import { HeroSection, Navbar } from './components';
+
+export interface styledApp {
+  containerStyle: SxProps;
+}
+
+const appStyle: styledApp = {
+  containerStyle:{
+    border:'1px solid red', 
+    display:'flex',
+    flexDirection:'column',
+    alignContent:'center',
+    alignItems:'center',
+    width:'100%',
+    height:'100vh',
+    margin:'0px',
+    padding:'0px',
+    '@media screen and (max-width: 440px)': {
+      height:'auto',
+    },
+  },
+}
+
+const App:React.FC<{}> = () => {
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Container maxWidth={false}  sx={appStyle.containerStyle}>
+      <Navbar/>
+      <HeroSection/>
+    </Container>
     </>
   )
 }
