@@ -19,8 +19,7 @@ export interface styledHeroSection {
   
   const heroSectionStyle: styledHeroSection = {
     mainContainer:{
-      position:'relative',
-      border:'1px solid red',
+      //border:'1px solid red',
       display:'flex',
       justifyContent:'center',
       width:'100%',
@@ -31,59 +30,91 @@ export interface styledHeroSection {
     },
 
     heroContainer:{
-      border:'1px solid red',
+      //border:'1px solid red',
       display:'flex',
       justifyContent:'center',
       width:'80%',
       margin:0,
-      '@media screen and (max-width: 440px)': {
+      '@media screen and (max-width: 880px)': {
         height:'auto',
+        flexDirection:'column-reverse',
+        alignItems:'center',
+        width:'100%',
       },
     },
 
     leftBox:{
-      border:'1px solid blue',
+      //border:'1px solid blue',
       width:'50%',
       display:'flex',
       flexDirection:'column',
       justifyContent:'space-evenly',
+      '@media screen and (max-width: 880px)': {
+        width:'100%',
+        alignItems:'center',
+        gap:3
+      },
     },
     rightBox:{
+      position:'relative',
       display:'flex',
       justifyContent:'center',
       alignItems:'center',
-      border:'1px solid blue',
-      width:'50%'
+      //border:'1px solid blue',
+      width:'50%',
+      '@media screen and (max-width: 880px)': {
+        marginBottom:'2rem',
+        width:'100%',
+      },
     },
     heroPicture:{
-      border:'1px solid black',
+      //border:'1px solid black',
       
       width:'100%',
       height:'auto',
-      '@media screen and (max-width: 440px)': {
+      '@media screen and (max-width: 880px)': {
+        width:'80%',
       },
     },
   
     buttonContainer:{
+      display:'flex',
+      gap:2,
     },
   
     button:{
+      textTransform: 'none',
+      fontWeight:'700',
     },
     title:{
+      //border:'1px solid black',
+      display:'flex',
+
       fontSize:'3rem',
       color: veryDarkBlue,
       fontWeight:'500 !important',
       fontFamily: rubikFontFamily + ' !important',
+      '@media screen and (max-width: 880px)': {
+        justifyContent:'center',
+        textAlign:'center',
+        fontSize:'2.5rem',
+      },
     },
     subTitle:{
-      border:'1px solid black',
+      //border:'1px solid black',
+      display:'flex',
+
       maxWidth:'480px',
       color: grayishBlue,
       opacity:0.9,
       fontFamily: rubikFontFamily + ' !important',
+      '@media screen and (max-width: 880px)': {
+        justifyContent:'center',
+        textAlign:'center',
+      },
     },
     img:{
-      width:'100%',
+      width: '100%',
       height:'auto',
     },
     blueRetangular:{
@@ -92,12 +123,15 @@ export interface styledHeroSection {
       zIndex:-10,
       top:'25%',
       width:'100%',
-      height:'100%',
-      maxWidth:'550px',
-      maxHeight:'280px',
+      height:'80%',
+      maxWidth:'450px',
+      maxHeight:'260px',
       minHeight:'100px',
       borderRadius: '100px 10px 10px 100px',
       backgroundColor: softBlue,
+      '@media screen and (max-width: 880px)': {
+        width:'80%',
+      },
     }
   }
 
@@ -105,9 +139,11 @@ export interface styledHeroSection {
 const HeroSection:React.FC<{}> = () => {
     return (
         <Box sx={heroSectionStyle.mainContainer}>
-          <Box sx={heroSectionStyle.blueRetangular}>
 
-          </Box>
+          
+            
+          
+
           <Box sx={heroSectionStyle.heroContainer}>
             
             <Box sx={heroSectionStyle.leftBox}>
@@ -127,6 +163,9 @@ const HeroSection:React.FC<{}> = () => {
             <Box sx={heroSectionStyle.rightBox}>
               <Box sx={heroSectionStyle.heroPicture}>
                 <img style={heroSectionStyle.img}  src={hero} alt="hero" />
+              </Box>
+              <Box sx={heroSectionStyle.blueRetangular}>
+
               </Box>
             </Box>
 

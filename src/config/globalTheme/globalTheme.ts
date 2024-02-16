@@ -20,6 +20,14 @@ import { softBlue, softRed, veryDarkBlue, white } from "../../styles/variables";
       },
     },
     components: {
+      MuiContainer: {
+        styleOverrides: {
+          root: {
+            margin: 0,
+            padding: 0,
+          },
+        },
+      },
       MuiTextField: {
         styleOverrides: {
           root: {

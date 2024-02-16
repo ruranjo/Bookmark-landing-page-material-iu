@@ -1,5 +1,5 @@
 
-import { Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SxProps } from '@mui/material'
+import { Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, SxProps } from '@mui/material'
 import React from 'react'
 import { iconHamburger, logoBookmark } from '../../utils/assets';
 import { rubikFontFamily } from '../../styles/variables';
@@ -15,7 +15,7 @@ export interface styledApp {
 
 const navbarStyle: styledApp = {
   navbarBox:{
-    border:'1px solid red',
+    //border:'1px solid red',
     display:'flex',
     justifyContent:'space-between',
     alignItems:'center',
@@ -35,7 +35,7 @@ const navbarStyle: styledApp = {
   },
 
   buttonContainer:{
-    border:'1px solid red',
+    //border:'1px solid red',
     display:'flex',
     justifyContent:'space-between',
     width:'40%',

@@ -1,2 +1,7 @@
 export * from './Navbar'
 export * from './HeroSection'
+export * from './FeacturesSection'
+export * from './DownloadExtensionSection'
+export * from './CardExtension'
+export * from './FrequentAskedQuestions'
+export * from './Footer'
