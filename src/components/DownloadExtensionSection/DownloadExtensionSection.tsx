@@ -39,6 +39,7 @@ export interface styledHeroSection {
       '@media screen and (max-width: 440px)': {
         height:'auto',
         margin:'0',
+        marginBottom:'5rem'
       },
     },
 
@@ -120,6 +121,8 @@ export interface styledHeroSection {
       '@media screen and (max-width: 880px)': {
         justifyContent:'center',
         textAlign:'center',
+        marginLeft:'1rem',
+        marginRight:'1rem',
       },
     },
     textHeader:{
@@ -202,11 +205,11 @@ const DownloadExtensionSection:React.FC<Props> = () => {
 
             <Box sx={feacturesSectionStyle.textHeader}>
                 <Typography variant='h2' sx={feacturesSectionStyle.title}>
-                    Feactures
+                  Download the extension
                 </Typography>
                 <Typography variant='subtitle1' sx={feacturesSectionStyle.subTitle}>
-                Our aim is to make it quick and easy for you to access your favourite websites. 
-                Your bookmarks sync between your devices so you can access them on the go.
+                    We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you’d like us to prioritize.
                 </Typography>
             </Box>
 

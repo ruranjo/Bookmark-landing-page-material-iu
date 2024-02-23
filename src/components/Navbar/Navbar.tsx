@@ -25,7 +25,8 @@ const navbarStyle: styledApp = {
     marginBottom:'1rem',
     '@media screen and (max-width: 440px)': {
       height:'auto',
-      width:'100%',
+      width:'90%',
+      
     },
   },
 

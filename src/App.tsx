@@ -11,7 +11,7 @@ export interface styledApp {
 
 const appStyle: styledApp = {
   containerStyle:{
-    border:'1px solid red', 
+    //border:'1px solid red', 
     display:'flex',
     flexDirection:'column',
     alignContent:'center',

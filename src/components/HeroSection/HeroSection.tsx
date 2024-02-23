@@ -24,6 +24,7 @@ export interface styledHeroSection {
       justifyContent:'center',
       width:'100%',
       margin:0,
+      marginBottom:'3rem',
       '@media screen and (max-width: 440px)': {
         height:'auto',
       },
@@ -111,6 +112,8 @@ export interface styledHeroSection {
       '@media screen and (max-width: 880px)': {
         justifyContent:'center',
         textAlign:'center',
+        marginLeft:'1rem',
+        marginRight:'1rem',
       },
     },
     img:{

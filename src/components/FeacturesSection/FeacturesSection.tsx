@@ -33,10 +33,12 @@ export interface styledHeroSection {
       justifyContent:'space-between',
       width:'100%',
       margin:0,
+      marginBottom:'3rem',
       paddingTop:'2rem',
       gap:2,
       '@media screen and (max-width: 440px)': {
         height:'auto',
+        
       },
     },
 
@@ -45,9 +47,10 @@ export interface styledHeroSection {
       display:'flex',
       justifyContent:'center',
       width:'80%',
-      margin:0,
+      
       '@media screen and (max-width: 880px)': {
         height:'auto',
+        marginTop:'3rem',
         flexDirection:'column-reverse',
         alignItems:'center',
         width:'100%',
@@ -125,9 +128,12 @@ export interface styledHeroSection {
       color: grayishBlue,
       opacity:0.9,
       fontFamily: rubikFontFamily + ' !important',
+      
       '@media screen and (max-width: 880px)': {
         justifyContent:'center',
         textAlign:'center',
+        marginLeft:'1rem',
+        marginRight:'1rem',
       },
     },
     textHeader:{
@@ -147,6 +153,7 @@ export interface styledHeroSection {
         justifyContent:'center',
         textAlign:'center',
         fontSize:'2.5rem',
+        
       },
     },
     tagSelector:{
@@ -163,6 +170,8 @@ export interface styledHeroSection {
       '@media screen and (max-width: 880px)': {
         justifyContent:'center',
         textAlign:'center',
+        marginLeft:'1rem',
+        marginRight:'1rem',
       },
     },
     img:{
@@ -174,9 +183,15 @@ export interface styledHeroSection {
     },
    
     tagsBox:{
+        //border:'1px solid black',
         display:'flex',
-        gap:8,
         cursor:'pointer',
+        
+        '@media screen and (max-width: 880px)': {
+          marginLeft:'1rem',
+          marginRight:'1rem', 
+          gap:2, 
+        },
     }
   }
 
