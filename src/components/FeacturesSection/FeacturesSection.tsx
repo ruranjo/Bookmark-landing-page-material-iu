@@ -186,7 +186,7 @@ export interface styledHeroSection {
         //border:'1px solid black',
         display:'flex',
         cursor:'pointer',
-        
+        gap:9, 
         '@media screen and (max-width: 880px)': {
           marginLeft:'1rem',
           marginRight:'1rem', 
